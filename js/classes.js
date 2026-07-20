@@ -96,11 +96,12 @@ class Fighter extends Sprite {
         framesMax = 1,
         offset = { x: 0, y: 0 },
         sprites,
-         audio= {				jump: './public/music/jump.wav',
-				takeHit: './public/music/hitHurt.wav',
-				walk: './public/music/walk.m4a',
-				bgm: './public/music/bgm.wav',
-				punch: './public/music/punch.wav',
+         audio= {
+				jump: '../music/jump.wav',
+				takeHit: '../music/hitHurt.wav',
+				walk: '../music/walk.m4a',
+				bgm: '../music/bgm.wav',
+				punch: '../music/punch.wav',
 			}, // NEW: Audio dictionary parameter
         attackBox = {
             offset: { x: 0, y: 0 },
