@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Swordy</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="main-container fullscreen">
+			<div class="status-container">
+				<!-- Player Health -->
+				
+				<div class="player-health-container">
+					<div class="player-health-percentage-container">
+					<p class="player-heart-emoji">Cop</p>
+					<p class="player-health-percentage">100%</p>
+				</div>
+					<div class="player-health-bg"></div>
+					<div id="playerHealth"></div>
+				</div>
+
+				<!-- Timer -->
+				<div id="timer">60</div>
+
+				<!-- Enemy Health -->
+				
+				<div class="enemy-health-container">
+					<div class="enemy-health-percentage-container">
+					<p class="enemy-health-percentage">100%</p>
+										<p class="enemy-heart-emoji">Criminal</p>
+
+				</div>
+					<div class="enemy-health-bg"></div>
+					<div id="enemyHealth"></div>
+				</div>
+			</div>
+
+			<!-- End of game renders -->
+			<div class="result-container">
+				<p class="result"></p>
+			</div>
+			<div class="reset">
+				<button class="reset-btn">Play Again</button>
+			</div>
+
+			<!-- Start of game renders -->
+			<div class="start">
+				<button class="start-btn">Start Game</button>
+			</div>
+
+			<!-- Canvas to draw the game -->
+			<canvas></canvas>
+		</div>
+		<!-- Controls Info -->
+		
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+			integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
