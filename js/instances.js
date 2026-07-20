@@ -6,7 +6,7 @@ import shopImageUrl from '../img/logo.png';
 import backgroundImageUrl1 from '../img/background2.png';
 
 // player sprites
-import playerIdleImageUrl from '../img/samuraiMack/idle1.png';
+import playerIdleImageUrl from '../img/samuraiMack/Idle1.png';
 import playerRunImageUrl from '../img/samuraiMack/Runn.png';
 import playerJumpImageUrl from '../img/samuraiMack/Jump1.png';
 import playerFallImageUrl from '../img/samuraiMack/Fall.png';
