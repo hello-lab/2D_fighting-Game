@@ -1,7 +1,11 @@
 import { HEALTH_DECREASE_ON_HIT, GRAVITY } from './constants';
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
-
+import jump  from '../music/jump.wav';
+import takeHit from '../music/hitHurt.wav';
+import walk from '../music/walk.m4a';
+import bgm from '../music/bgm.wav';
+import punch from '../music/punch.wav';
 class Sprite {
     constructor({
         position,
@@ -97,11 +101,11 @@ class Fighter extends Sprite {
         offset = { x: 0, y: 0 },
         sprites,
          audio= {
-				jump: '../music/jump.wav',
-				takeHit: '../music/hitHurt.wav',
-				walk: '../music/walk.m4a',
-				bgm: '../music/bgm.wav',
-				punch: '../music/punch.wav',
+				jump: jump,
+				takeHit: takeHit,
+				walk: walk,
+				bgm: bgm,
+				punch: punch,
 			}, // NEW: Audio dictionary parameter
         attackBox = {
             offset: { x: 0, y: 0 },
